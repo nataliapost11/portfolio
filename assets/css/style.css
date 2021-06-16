@@ -1,3 +1,231 @@
-body{
-    background-color: white;
+:root {
+  --section-font-color: #415570;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comic Sans MS', Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 14pt;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  background-color: #EDEDF7;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2px;
+  background: #31343D;
+  color: #90CECD;
+  background-image: url(../images/sub-header-bg.jpg);
+  background-size: cover;
+  min-height: 220px;
+  position: relative;
+}
+
+.main-header div {
+  display: flex;
+  background-color: #31343D;
+  align-items: right;
+}
+
+.main-header h1 {
+  background: #90CECD;
+  color: #31343D;
+  text-align: right;
+  margin: 0;
+  padding: 10px;
+  width: 400px;
+}
+
+.sub-header {
+  background: #90CECD;
+  color: #31343D;
+  margin: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+}
+
+/******** Top navigation bar **********/
+nav {
+  justify-content: right;
+  flex: 3 0 0;
+  margin: 10px;
+  text-align: right;
+}
+
+nav a {
+  color: #90CECD;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 20px 10px;
+  font-size: 18pt;
+  border-bottom: 3px solid #90CECD;
+  padding: 10px;
+}
+
+/******** Portfolio items row **********/
+
+.portfolio-item {
+  display: flex;
+  color: var(--section-font-color);
+  margin: 20px;
+}
+
+.portfolio-item>header {
+  font-size: 32pt;
+  font-weight: bold;
+  border-right: 6px solid var(--section-font-color);
+  flex: 1 0 0;
+  text-align: right;
+  padding: 20px;
+}
+
+.portfolio-item>.content {
+  text-align: left;
+  flex: 4 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 180px;
+  margin: 10px 50px;
+}
+
+/******** Work item project cards ******/
+
+.work-card {
+  padding: 0;
+  margin: 10px;
+  position: relative;
+  border: 6px solid #91CBCD;
+  flex: 0 0 45%;
+  display: flex;
+  background-repeat: repeat-x;
+  background-size: cover;
+  min-width: 300px;
+  min-height: 250px;
+}
+
+.work-card a {
+  width: 100%;
+  height: 100%;
+}
+
+.work-card header {
+  position: absolute;
+  left: 2px;
+  bottom: 20px;
+  padding: 5px;
+  background-color: #91CBCD;
+  color: #333333;
+}
+
+/***** Set first cards' size bigger ******/
+.work-card:first-child {
+  flex: 0 0 92%;
+  min-height: 600px;
+}
+
+
+/****** Project Images *********/
+
+.project-1 {
+  background-image: url(../images/project1.jpg);
+}
+
+.project-2 {
+  background-image: url(../images/project2.jpg);
+}
+
+.project-3 {
+  background-image: url(../images/project3.jpg);
+}
+
+.project-4 {
+  background-image: url(../images/project4.jpg);
+}
+
+.project-5 {
+  background-image: url(../images/project5.jpg);
+}
+
+/***** Contact Me Links ******/
+#contact-me a {
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px 15px;
+  font-size: 22pt;
+  padding: 10px;
+  flex: 1 0 0;
+  text-decoration: underline;
+  text-decoration-color: var(--section-font-color);
+  text-decoration-style: solid;
+  text-decoration-thickness: 6px;
+}
+
+/****** Footer section *******/
+footer {
+  background-color: black;
+  color: #ffffff;
+  font-size: 14pt;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 3pt;
+}
+
+/******** Media CSS *** 768px *******/
+
+@media screen and (max-width: 768px) {
+
+  main,
+  nav {
+    flex-direction: column;
+  }
+
+  .main-header div {
+    flex-direction: column;
+  }
+
+  .main-header div h1 {
+    width: auto;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-item header {
+    text-align: left;
+    border-right: none;
+    border-left: 6px solid var(--section-font-color);
+  }
+
+  .work-card:first-child {
+    flex: 0 0 92%;
+    min-height: 300px;
+  }
+  
+  .portfolio-item .content
+  {
+    flex-direction: column;
+  }
+
 }
