@@ -13,10 +13,17 @@ body {
   margin: 0;
   font-size: 14pt;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: flex-start;
   background-color: #EDEDF7;
 }
+
+/*
+main
+{
+  margin-top: 300px;
+}
+*/
 
 .main-header {
   display: flex;
@@ -30,6 +37,8 @@ body {
   background-size: cover;
   min-height: 220px;
   position: relative;
+  width: 100%;
+  z-index: 9999;
 }
 
 .main-header div {
@@ -119,7 +128,7 @@ nav a {
   background-repeat: repeat-x;
   background-size: cover;
   min-width: 300px;
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .work-card a {
@@ -129,8 +138,8 @@ nav a {
 
 .work-card header {
   position: absolute;
-  left: 2px;
-  bottom: 20px;
+  left: 0px;
+  bottom: 0px;
   padding: 5px;
   background-color: #91CBCD;
   color: #333333;
@@ -145,16 +154,16 @@ nav a {
 
 /****** Project Images *********/
 
-.project-1 {
-  background-image: url(../images/project1.jpg);
+.project-game-time {
+  background-image: url(../images/project-game-time.jpg);
 }
 
-.project-2 {
-  background-image: url(../images/project2.jpg);
+.project-weather-dashboard {
+  background-image: url(../images/project-weather-dashboard.jpg);
 }
 
-.project-3 {
-  background-image: url(../images/project3.jpg);
+.project-workday-scheduler {
+  background-image: url(../images/project-workday-scheduler.jpg);
 }
 
 .project-4 {
@@ -166,19 +175,20 @@ nav a {
 }
 
 /***** Contact Me Links ******/
-#contact-me a {
-  color: #333333;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
+#contact-me .contact-item {
   margin: 5px 15px;
-  font-size: 15pt;
-  padding: 10px;
+  padding: 6px;
+  font-size: 18pt;
   flex: 1 0 0;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #91CBCD;
+}
+
+#contact-me a { 
   text-decoration: underline;
   text-decoration-color: var(--section-font-color);
   text-decoration-style: solid;
-  text-decoration-thickness: 6px;
 }
 
 /****** Footer section *******/
@@ -222,9 +232,8 @@ footer {
     flex: 0 0 92%;
     min-height: 300px;
   }
-  
-  .portfolio-item .content
-  {
+
+  .portfolio-item .content {
     flex-direction: column;
   }
 
