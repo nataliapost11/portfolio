@@ -154,6 +154,10 @@ nav a {
 
 /****** Project Images *********/
 
+.project-pawtime {
+  background-image: url(../images/project-pawtime.jpg);
+}
+
 .project-game-time {
   background-image: url(../images/project-game-time.jpg);
 }
@@ -177,9 +181,9 @@ nav a {
 /***** Contact Me Links ******/
 #contact-me .contact-item {
   margin: 5px 15px;
-  padding: 6px;
+  padding: 4px 10px;
   font-size: 18pt;
-  flex: 1 0 0;
+  flex: 1 0 400px;
   text-align: center;
   border-radius: 8px;
   background-color: #91CBCD;
