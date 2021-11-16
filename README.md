@@ -1,6 +1,7 @@
-# portfolio
-Portfolio Natalia Post
+# Portfolio
+Portfolio of Natalia Post
 
-## Links
+## Application
+Website - https://nataliapost11.github.io/portfolio/
 
-https://nataliapost11.github.io/portfolio/
+![Portfolio](./images/application.jpg)
